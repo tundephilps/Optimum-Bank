@@ -1,0 +1,50 @@
+.Loan{
+    height: 140vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(1, 1, 24);
+    justify-content: center;
+    overflow: hidden;
+}
+
+.ETableCellText{
+    background-color: firebrick;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+
+}
+
+.ETableCellVal{
+    text-align: right;
+    font-size: 18px;
+}
+
+.CalApp{
+    width: 60%;
+    height: 90%;
+    border: 2px #CCC solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    background-color: black;
+}
+
+.CalHeading{
+    text-align: center;
+    color: firebrick;
+    font-size: 4rem;
+}
+
+#pie{
+    height: 30px;
+    width: 30px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo{
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+

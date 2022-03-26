@@ -1,0 +1,167 @@
+
+  html {
+    height: 100%;
+  }
+  body {
+    font-family: Special Elite;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    background-image: radial-gradient(circle, #333, #111);   
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .shadow {
+    box-shadow: 1px 1px 0 #111, 2px 2px 0 #111;
+  }
+  .dark-box {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-image: radial-gradient(circle, #333, #111);   
+    width: 350px;
+    height: 340px;
+    border-radius: 0;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 0 22px 4px rgba(255, 255, 255, 0.05), 0 0 3px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .dark-box:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    left: 35%;
+    top: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.05), #444, #b6b6b8, #444, rgba(0, 0, 0, 0.05));
+    transition: all 1s;
+  }
+  .dark-box:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    transition: transform 1s;
+    border-radius: 50%;
+    left: 50%;
+    top: -7px;
+    box-shadow: 0 0 6px 4px #fff;
+  }
+  .dark-box:hover::before {
+    transform: translate(40px, -10px);
+  }
+  .dark-box:hover::after {
+    transform: translate(40px, 0);
+    opacity: 0.2;
+  }
+  .dark-box:hover h1 {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .dark-box:hover h1:after {
+    opacity: 0.4;
+    height: 60px;
+    transform-origin: 43% 200%;
+    transform: rotate(76deg);
+  }
+  .dark-box h1 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 14px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #19191a;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), 
+  rgba(0, 0, 0, 0.5));
+    box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.9);
+    transition: all 1s;
+    transform: translate3d(0, 0, 100);
+  }
+  .dark-box h1:after {
+    transform-origin: 50% 50%;
+    content: "";
+    display: block;
+    width: 200%;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    left: -40%;
+    pointer-events: none;
+    z-index: 1000;
+    transform: rotate(70deg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 240, 0.08));
+    transition: all 1s;
+  }
+  .inset {
+    padding: 0 20px 0 20px;
+    border-top: 1px solid #000;
+  }
+  label {
+    color: #666;
+    display: block;
+    transform: translate(0, -30px);
+  }
+  .dark-input {
+    transform: translate3d(0, 40px, 0);
+    width: 100%;
+    color: white;
+    padding: 9px 5px;
+    background: linear-gradient(#222, #1a1a1a);
+    border: 1px solid #000;
+    border-left-color: rgba(255, 255, 200, 0.1);
+    box-shadow: 1px 1px 0 #111, 2px 2px 0 #111;
+    border-radius: 0;
+    margin-bottom: 15px;
+  }
+  .dark-input:focus {
+    outline: none;
+    border-left-color: rgba(255, 255, 200, 0.5);
+    background: #222;
+  }
+  .dark-input:focus + label {
+    color: white;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    padding: 17px;
+  }
+  .container:after {
+    clear: both;
+    display: table;
+    content: "";
+  }
+  .dark-button {
+    display: flex;
+    flex-grow: 1;
+    min-width: 100%;
+    padding: 12px;
+    padding-bottom: 5px;
+    border: 1px solid #19191a;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 18px 4px rgba(255, 255, 255, 0.2), 1px 1px 0 #111, 2px 2px 0 #111;
+    background: #000000;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Special Elite;
+    transition: all 0.3s;
+  }
+  .dark-button:hover {
+    border-color: #000;
+    background-color: #0d0d0d;
+    color: rgba(255, 255, 255, 0.8);
+  }

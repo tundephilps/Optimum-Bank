@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name":"Jenny Chan",
+        "address": "igbo street",
+        "phoneNumber": "08036352722",
+        "email": "jenny@gmail.com"
+    },
+    {
+        "id": 2,
+        "name":"deji",
+        "address": "yoruba avenue",
+        "phoneNumber": "08036352722",
+        "email": "deji@yahoo.com"
+        
+    }
+
+]

@@ -1,0 +1,136 @@
+
+
+
+#Form-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row Wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+
+    background-image: radial-gradient(circle, #333, #111);   
+    color: black;
+    font-weight: bolder;   
+}
+
+#Grid{
+    display: flex;
+    flex-direction: column;
+}
+
+#Form{
+    min-height: "350px";
+    padding: "16px";
+    margin: "20px 0";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Next{
+    margin-left: 100rem;
+}
+
+#buttonSpace{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.App-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.center-stepper{
+    display: flex;
+}
+
+#Step{
+    font-size: 9rem;
+}
+
+table {
+    width: 100%;
+
+}
+
+th,
+td{
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    font-size: 15px;
+}
+
+th{
+    background-color: blue;
+    
+}
+
+td{
+    background-color: rgb(23, 23, 24);
+    color: white;
+}
+
+form{
+    display:flex;
+    
+}
+
+form td:last-child{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    right: 50%
+}
+
+#steplabel{
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*export const Styles ={
+    formContainer:{
+        width: "100%",
+        height: "98vh",
+        display: "flex",
+        flexFlow: "row wrap",
+        justifyContent:"center",
+        alignItems: "center"
+
+    },
+
+    form:{
+        minHeight: "300px",
+        padding:"14px",
+        margin: "15px 0",
+        display: "flex",
+        flexDirection: "column",
+    }
+}*/
